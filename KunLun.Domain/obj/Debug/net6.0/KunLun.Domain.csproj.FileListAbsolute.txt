@@ -1,0 +1,12 @@
+E:\github\KunLun\KunLun.Domain\bin\Debug\net6.0\KunLun.Domain.deps.json
+E:\github\KunLun\KunLun.Domain\bin\Debug\net6.0\KunLun.Domain.dll
+E:\github\KunLun\KunLun.Domain\bin\Debug\net6.0\KunLun.Domain.pdb
+E:\github\KunLun\KunLun.Domain\obj\Debug\net6.0\KunLun.Domain.csproj.AssemblyReference.cache
+E:\github\KunLun\KunLun.Domain\obj\Debug\net6.0\KunLun.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\github\KunLun\KunLun.Domain\obj\Debug\net6.0\KunLun.Domain.AssemblyInfoInputs.cache
+E:\github\KunLun\KunLun.Domain\obj\Debug\net6.0\KunLun.Domain.AssemblyInfo.cs
+E:\github\KunLun\KunLun.Domain\obj\Debug\net6.0\KunLun.Domain.csproj.CoreCompileInputs.cache
+E:\github\KunLun\KunLun.Domain\obj\Debug\net6.0\KunLun.Domain.dll
+E:\github\KunLun\KunLun.Domain\obj\Debug\net6.0\refint\KunLun.Domain.dll
+E:\github\KunLun\KunLun.Domain\obj\Debug\net6.0\KunLun.Domain.pdb
+E:\github\KunLun\KunLun.Domain\obj\Debug\net6.0\ref\KunLun.Domain.dll

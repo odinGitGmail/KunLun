@@ -1,0 +1,12 @@
+E:\github\KunLun\KunLun.Application\bin\Debug\net6.0\KunLun.Application.deps.json
+E:\github\KunLun\KunLun.Application\bin\Debug\net6.0\KunLun.Application.dll
+E:\github\KunLun\KunLun.Application\bin\Debug\net6.0\KunLun.Application.pdb
+E:\github\KunLun\KunLun.Application\obj\Debug\net6.0\KunLun.Application.csproj.AssemblyReference.cache
+E:\github\KunLun\KunLun.Application\obj\Debug\net6.0\KunLun.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\github\KunLun\KunLun.Application\obj\Debug\net6.0\KunLun.Application.AssemblyInfoInputs.cache
+E:\github\KunLun\KunLun.Application\obj\Debug\net6.0\KunLun.Application.AssemblyInfo.cs
+E:\github\KunLun\KunLun.Application\obj\Debug\net6.0\KunLun.Application.csproj.CoreCompileInputs.cache
+E:\github\KunLun\KunLun.Application\obj\Debug\net6.0\KunLun.Application.dll
+E:\github\KunLun\KunLun.Application\obj\Debug\net6.0\refint\KunLun.Application.dll
+E:\github\KunLun\KunLun.Application\obj\Debug\net6.0\KunLun.Application.pdb
+E:\github\KunLun\KunLun.Application\obj\Debug\net6.0\ref\KunLun.Application.dll
