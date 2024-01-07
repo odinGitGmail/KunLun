@@ -4,16 +4,22 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+<<<<<<< HEAD
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <NoWarn>$(NoWarn);1591</NoWarn>
+=======
+>>>>>>> b4ef06f15defe758aee32d064e4d225ce982ce3f
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
     </ItemGroup>
 
+<<<<<<< HEAD
     <ItemGroup>
       <ProjectReference Include="..\..\Cola\ColaFramework\Cola.ColaMiddleware\Cola.ColaMiddleware.csproj" />
     </ItemGroup>
 
+=======
+>>>>>>> b4ef06f15defe758aee32d064e4d225ce982ce3f
 </Project>

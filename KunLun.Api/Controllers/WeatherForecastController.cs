@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 using Microsoft.AspNetCore.Authorization;
+=======
+>>>>>>> b4ef06f15defe758aee32d064e4d225ce982ce3f
 using Microsoft.AspNetCore.Mvc;
 
 namespace KunLun.Api.Controllers;
 
 [ApiController]
+<<<<<<< HEAD
 [Authorize]
+=======
+>>>>>>> b4ef06f15defe758aee32d064e4d225ce982ce3f
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
@@ -20,6 +26,7 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
+<<<<<<< HEAD
     /// <summary>
     /// Get
     /// </summary>
@@ -27,6 +34,10 @@ public class WeatherForecastController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     [ProducesResponseType(typeof(IEnumerable<WeatherForecast>),200)]
     public Object Get()
+=======
+    [HttpGet(Name = "GetWeatherForecast")]
+    public IEnumerable<WeatherForecast> Get()
+>>>>>>> b4ef06f15defe758aee32d064e4d225ce982ce3f
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
