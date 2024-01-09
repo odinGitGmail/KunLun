@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaCache" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaEF" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaGrpc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaJwt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaMiddleware" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaWebApi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.Core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.CoreUtils" vcs="Git" />
   </component>
 </project>
