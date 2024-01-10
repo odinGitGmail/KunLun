@@ -7,6 +7,7 @@
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaGrpc" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaJwt" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaMiddleware" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaMongo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaWebApi" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.Core" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.CoreUtils" vcs="Git" />
