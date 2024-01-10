@@ -25,7 +25,9 @@ public class WeatherForecastController : ControllerBase
     [HttpGet("/api/values")]
     public string Version()
     {
-        return "version-test method : 1.0";
+        string str = "abc123abc456abc";
+        str = str.Replace("a", string.Empty);
+        return $"1.0 {str}";
     }
     
     /// <summary>
