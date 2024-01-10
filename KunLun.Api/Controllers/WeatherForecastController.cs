@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace KunLun.Api.Controllers;
 
+[ApiVersion("1.0")]
 [ApiController]
-[Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
@@ -18,15 +18,24 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    /// <summary>
+    /// Version1
+    /// </summary>
+    /// <returns></returns>
+    [HttpGet("/api/values")]
+    public string Version()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+        return "version-test method : 1.0";
+    }
+    
+    /// <summary>
+    /// Version2
+    /// </summary>
+    /// <returns></returns>
+    [ApiVersion("2.0")]
+    [HttpGet("/api/{v:apiVersion}/values")]
+    public string Version2()
+    {
+        return "version-test method : 2.0";
     }
 }
