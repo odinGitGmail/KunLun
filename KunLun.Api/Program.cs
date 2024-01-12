@@ -27,7 +27,7 @@ builder.Services.AddEndpointsApiExplorer();
 // builder.Services.AddSwaggerGen();
 builder.Services.AddColaSwagger(config);
 builder.Services.AddColaIpRateLimit(config);
-builder.Services.AddColaCors(config);
+builder.Services.AddColaCors(config,"LimitRequests");
 
 var app = builder.Build();
 
@@ -47,7 +47,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseCors("LimitRequests");
+app.UseCors();
 app.UseIpRateLimiting();
 
 app.UseAuthentication();

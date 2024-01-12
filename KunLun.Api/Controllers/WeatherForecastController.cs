@@ -2,7 +2,6 @@ using Cola.ColaJwt;
 using Cola.Core.Models.ColaJwt;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 
 namespace KunLun.Api.Controllers;
 
