@@ -2,6 +2,7 @@ using AspNetCoreRateLimit;
 using Cola.ColaMiddleware.ColaIpRateLimit;
 using Cola.ColaMiddleware.ColaSwagger;
 using Cola.ColaMiddleware.ColaVersioning;
+using Cola.ColaJwt;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("appsettings.json");
@@ -9,6 +10,7 @@ var config = builder.Configuration;
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddColaJwt(config);
 builder.Services.AddColaVersioning(config);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -37,7 +39,9 @@ app.UseHttpsRedirection();
 
 app.UseIpRateLimiting();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
 
 app.MapControllers();
 
