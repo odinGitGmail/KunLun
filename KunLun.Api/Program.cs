@@ -8,11 +8,11 @@ using Cola.ColaJwt;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Host
-    .ConfigureLogging((hostingContext, builder) =>
+    .ConfigureLogging((hostingContext, build) =>
     {
         //该方法需要引入Microsoft.Extensions.Logging名称空间
-        builder.AddFilter("System", LogLevel.Error); //过滤掉系统默认的一些日志
-        builder.AddFilter("Microsoft", LogLevel.Error); //过滤掉系统默认的一些日志
+        build.AddFilter("System", LogLevel.Error); //过滤掉系统默认的一些日志
+        build.AddFilter("Microsoft", LogLevel.Error); //过滤掉系统默认的一些日志
     });
 
 builder.Configuration.AddJsonFile("appsettings.json");
