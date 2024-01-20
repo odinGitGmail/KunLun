@@ -27,7 +27,7 @@ builder.Services.AddEndpointsApiExplorer();
 // builder.Services.AddSwaggerGen();
 builder.Services.AddColaSwagger(config);
 builder.Services.AddColaIpRateLimit(config);
-builder.Services.AddColaCors(config,"LimitRequests");
+builder.Services.AddColaCors(config);
 
 var app = builder.Build();
 
