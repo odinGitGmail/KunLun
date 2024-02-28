@@ -1,7 +1,9 @@
 using Cola.ColaJwt;
+using Cola.Core.Models;
 using Cola.Core.Models.ColaJwt;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NetTaste;
 
 namespace KunLun.Api.Controllers;
 
@@ -28,14 +30,15 @@ public class WeatherForecastController : ControllerBase
     /// <returns></returns>
     [HttpGet("/api/[Controller]/login")]
     [AllowAnonymous]
-    public TokenResult Login()
+    public ApiResult<AccessToken> Login()
     {
-        return _colaJwt.CreateToken(_colaJwt.CreateTokenDescriptor(new TokenUserInfo()
+        return new ApiResult<AccessToken>()
         {
-            CurrentUserId = "123123",
-            CurrentLoginName = "odinSam",
-            CurrentUserName = "djj"
-        }));
+            Data = new AccessToken()
+            {
+                Token = _colaJwt.GenerateToken("odinSam")
+            }
+        };
     }
 
     /// <summary>

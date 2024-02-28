@@ -5,14 +5,17 @@
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaCache" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaEF" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaGrpc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaHostedService" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaJwt" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaMiddleware" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaMongo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaNacos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaSignalR" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.ColaWebApi" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.Core" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.CoreUtils" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.SystemBuilder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Cola/ColaFramework/Cola.colainject" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/KunLun.KlGetway" vcs="Git" />
   </component>
 </project>

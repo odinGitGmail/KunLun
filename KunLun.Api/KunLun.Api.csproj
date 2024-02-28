@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
     <ItemGroup>
+      <ProjectReference Include="..\..\Cola\ColaFramework\Cola.ColaInject\Cola.ColaInject.csproj" />
       <ProjectReference Include="..\..\Cola\ColaFramework\Cola.ColaJwt\Cola.ColaJwt.csproj" />
       <ProjectReference Include="..\..\Cola\ColaFramework\Cola.ColaMiddleware\Cola.ColaMiddleware.csproj" />
       <ProjectReference Include="..\..\Cola\ColaFramework\Cola.SystemBuilder\Cola.SystemBuilder.csproj" />

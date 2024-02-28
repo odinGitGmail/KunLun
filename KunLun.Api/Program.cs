@@ -1,10 +1,8 @@
 using AspNetCoreRateLimit;
-using Cola.ColaMiddleware.ColaIpRateLimit;
-using Cola.ColaMiddleware.ColaSwagger;
-using Cola.ColaMiddleware.ColaVersioning;
-using Microsoft.AspNetCore.Hosting;
-using Cola.SystemBuilder;
+using Cola.ColaInject;
 using Cola.ColaJwt;
+using Cola.ColaMiddleware.ColaSwagger;
+using Cola.ColaMiddleware.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Host
@@ -17,18 +15,17 @@ builder.Host
 
 builder.Configuration.AddJsonFile("appsettings.json");
 var config = builder.Configuration;
+// HttpContext注入
+builder.Services.AddHttpContextAccessor();
 // Add services to the container.
-
+builder.Services.AddColaCore(config);
 builder.Services.AddControllers();
-builder.Services.AddColaJwt(config);
-builder.Services.AddColaVersioning(config);
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-// builder.Services.AddSwaggerGen();
-builder.Services.AddColaSwagger(config);
-builder.Services.AddColaIpRateLimit(config);
-builder.Services.AddColaCors(config);
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("RequireAccessToken", policy =>
+        policy.Requirements.Add(new RefreshTokenRequirement(300))); // Set refresh threshold (e.g., 300 seconds)
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -43,8 +40,6 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseCors();
@@ -52,8 +47,6 @@ app.UseIpRateLimiting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
-
 app.MapControllers();
-
+app.UseColaHealthChecks("/healthCheck");
 app.Run();
